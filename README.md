@@ -19,5 +19,5 @@ Mỗi thành viên tự triển khai automation script cho **2 chức năng** tr
 | 22130xxx  | Đỗ Khánh Thuận           |MaSV_HoTen_Lab7  |
 | 22130xxx  | Võ Anh Hào               | MaSV_HoTen_Lab7 |
 | 22130xxx  | Đào Công Vinh            | MaSV_HoTen_Lab7 |
-| 22130xxx  | Phương Thảo              | MaSV_HoTen_Lab7 |
+| 20130408  | Lê Ngọc Phương Thảo      | MaSV_HoTen_Lab7 |
 | 22130xxx  | Yến Nhung                | MaSV_HoTen_Lab7 |
