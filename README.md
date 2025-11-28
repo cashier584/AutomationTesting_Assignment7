@@ -5,7 +5,7 @@ Mỗi thành viên tự triển khai automation script cho **2 chức năng** tr
 ---
 
 ## Nội dung bài làm
-- Công cụ sử dụng: Selenium
+- Công cụ sử dụng: Selenium, Playwright
 - Website test: **Daily Dictation**  
   https://dailydictation.com/
 ---
