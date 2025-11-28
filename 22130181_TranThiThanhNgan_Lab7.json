@@ -1,0 +1,656 @@
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "testCases": [
+        {
+            "name": "ShowFullScriptTranslateLanguage01",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "#select-translation"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullAudioPlayAudio02",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Start Now\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Short Stories\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'groupsAccordion86\\']/div/h2/button/span/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'lessonGroup86\\']/div/div/div/div/div/div/div/div/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'transcriptAccordion\\']/div/h2/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptSelectLanguage02",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "#select-translation"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "select option",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "javascript",
+                    "javaScript": "\n                    let add = false;\n                    let x = typeof $ !== 'undefined' ? $('#select-translation')[0] : document.querySelector('#select-translation');\n                    for (i = 0; i < x.options.length; i++) {\n                        if (x.options[i].text === \"Albanian\") {\n                            if(add) {\n                                x.options[i].selected = true;\n                            } else {\n                                x.options.selectedIndex = i;\n                            }\n                        }\n                    }"
+                }
+            ]
+        },
+        {
+            "name": "TCShowFullAudioOffSpeaker03",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'transcriptAccordion\\']/div/h2/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptSelectRepeat03",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "#repeatChecbox"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullAudioSeekAudio04",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'transcriptAccordion\\']/div/h2/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptPlay04",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullAudioDownload05",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'transcriptAccordion\\']/div/h2/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptSeek05",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullAudioSpeed06",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'transcriptAccordion\\']/div/h2/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptOffSpeaker06",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptAdjustVolume07",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptTextAudio08",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "waitForElementPresent",
+                    "wait": {
+                        "waitFor": "validation",
+                        "timeoutInMilliseconds": 60000,
+                        "validation": {
+                            "target": {
+                                "locators": [
+                                    {
+                                        "type": "dom",
+                                        "value": "document.evaluate('//div[contains(@class, \\'bg-primary-subtle\\')]//div[contains(text(), \\'Today is November 26th\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                                    }
+                                ]
+                            },
+                            "type": "element_match",
+                            "failIfFound": false,
+                            "match": ""
+                        }
+                    },
+                    "target": {},
+                    "type": "javascript",
+                    "javaScript": ""
+                },
+                {
+                    "description": "verifyText",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "javascript",
+                    "javaScript": "const elem = document.evaluate('//div[contains(@class, \\'bg-primary-subtle\\')]//div[contains(@class, \\'fs-6\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Today is November 26th.\";\n                        if(matches && false) {\n                            api.fail(\"Text Today is November 26th. was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Today is November 26th. was not present.\");\n                        }"
+                },
+                {
+                    "description": "verifyText",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "javascript",
+                    "javaScript": "const elem = document.evaluate('//div[contains(@class, \\'bg-primary-subtle\\')]//div[contains(@class, \\'text-muted\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"HÃ´m nay lÃ  ngÃ y 26 thÃ¡ng 11.\";\n                        if(matches && false) {\n                            api.fail(\"Text HÃ´m nay lÃ  ngÃ y 26 thÃ¡ng 11. was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text HÃ´m nay lÃ  ngÃ y 26 thÃ¡ng 11. was not present.\");\n                        }"
+                }
+            ]
+        },
+        {
+            "name": "ShowFullScriptMoveSentence09",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Full transcript\")"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'app-transcript\\']/div/div[3]/div[2]/button[3]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'app-transcript\\']/div/div[3]/div[2]/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        },
+        {
+            "name": "ShowFullAudioShowFull01",
+            "events": [
+                {
+                    "description": "Loading of \"https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type\"",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {},
+                    "type": "navigate",
+                    "url": "https://dailydictation.com/exercises/short-stories/1-first-snowfall.1/listen-and-type"
+                },
+                {
+                    "description": "click",
+                    "wait": {
+                        "waitFor": "page_complete"
+                    },
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@id=\\'transcriptAccordion\\']/div/h2/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "type": "click",
+                    "button": 0
+                }
+            ]
+        }
+    ]
+}
