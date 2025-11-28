@@ -1,0 +1,768 @@
+{
+    "User_Auth_Login_01": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Login",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_username",
+            "value": "usertest@gmail.com"
+        },
+        {
+            "command": "click",
+            "target": "id=_password",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_password",
+            "value": "nh123"
+        },
+        {
+            "command": "click",
+            "target": "id=submit",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=//a[@id='account-dropdown-toggle']/span",
+            "value": "usertest",
+            "ignoreFailure": true
+        }
+    ],
+    "User_Auth_Login_02": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Login",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_username",
+            "value": "emailchuadk@gmail.com"
+        },
+        {
+            "command": "click",
+            "target": "id=_password",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_password",
+            "value": "nh123"
+        },
+        {
+            "command": "click",
+            "target": "id=submit",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=//div[contains(text(),'Username or password is not correct')]",
+            "value": "Username or password is not correct, please try again!",
+            "ignoreFailure": true
+        }
+    ],
+    "User_Auth_Login_03": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Login",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_username",
+            "value": "usertest@gmail.com"
+        },
+        {
+            "command": "click",
+            "target": "id=_password",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_password",
+            "value": "nh12345"
+        },
+        {
+            "command": "click",
+            "target": "id=submit",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Login'])[3]/preceding::div[1]",
+            "value": "Username or password is not correct, please try again!",
+            "ignoreFailure": true
+        }
+    ],
+    "User_Auth_Login_04": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Login",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_username",
+            "value": "abc@gmail.com"
+        },
+        {
+            "command": "click",
+            "target": "id=_password",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_password",
+            "value": "nh123"
+        },
+        {
+            "command": "click",
+            "target": "id=submit",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Login'])[3]/preceding::div[1]",
+            "value": "Username or password is not correct, please try again!",
+            "ignoreFailure": true
+        }
+    ],
+    "User_Auth_Login_05": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Login",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_password",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=submit",
+            "value": ""
+        }
+    ],
+    "User_Auth_Login_06": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Login",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_username",
+            "value": "abc123com"
+        },
+        {
+            "command": "click",
+            "target": "id=_password",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_password",
+            "value": "nh12"
+        },
+        {
+            "command": "click",
+            "target": "id=submit",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Login'])[3]/preceding::div[1]",
+            "value": "Username or password is not correct, please try again!",
+            "ignoreFailure": true
+        }
+    ],
+    "User_Auth_Login_07": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Login",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=_username",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_username",
+            "value": "usertest"
+        },
+        {
+            "command": "click",
+            "target": "id=_password",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=_password",
+            "value": "nh123"
+        },
+        {
+            "command": "click",
+            "target": "id=submit",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://dailydictation.com/exercises",
+            "value": "",
+            "ignoreFailure": true
+        }
+    ],
+    "User_Auth_Login_08": [
+        {
+            "command": "open",
+            "target": "https://dailydictation.com/exercises",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='account-dropdown-toggle']/span",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Logout",
+            "value": ""
+        }
+    ],
+    "User_Auth_Register_01" : [
+    {
+        "command": "open",
+        "target": "https://dailydictation.com/",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Register",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "id=displayName",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=displayName",
+        "value": "automation1"
+    },
+    {
+        "command": "click",
+        "target": "id=email",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=email",
+        "value": "automation1@gmail.com"
+    },
+    {
+        "command": "click",
+        "target": "id=password",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=password",
+        "value": "nh123"
+    },
+    {
+        "command": "click",
+        "target": "id=submit",
+        "value": ""
+    },
+    {
+        "command": "verifyText",
+        "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='let me know'])[1]/preceding::h1[1]",
+        "value": "Welcome, automation1! 👋👋👋",
+        "ignoreFailure": true
+    },
+    {
+        "command": "click",
+        "target": "link=Practice Now",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "xpath=//a[@id='account-dropdown-toggle']/span",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Logout",
+        "value": ""
+    }
+],
+"User_Auth_Register_02": [
+    {
+        "command": "open",
+        "target": "https://dailydictation.com/",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Register",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "id=displayName",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=displayName",
+        "value": "user123"
+    },
+    {
+        "command": "click",
+        "target": "id=email",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=email",
+        "value": "usertest@gmail.com"
+    },
+    {
+        "command": "click",
+        "target": "id=password",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=password",
+        "value": "nh123"
+    },
+    {
+        "command": "click",
+        "target": "id=submit",
+        "value": ""
+    },
+    {
+        "command": "verifyText",
+        "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::div[1]",
+        "value": "This email has been used for another account.",
+        "ignoreFailure": true
+    }
+],
+"User_Auth_Register_03" : [
+    {
+        "command": "open",
+        "target": "https://dailydictation.com/",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Register",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "id=displayName",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=displayName",
+        "value": "testuser1a"
+    },
+    {
+        "command": "click",
+        "target": "id=email",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=email",
+        "value": "testuser1a@gmail.com"
+    },
+    {
+        "command": "click",
+        "target": "id=submit",
+        "value": ""
+    },
+    {
+        "command": "verifyText",
+        "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::div[1]",
+        "value": "This value should not be blank.",
+        "ignoreFailure": true
+    }
+],
+"User_Auth_Register_04": [
+    {
+        "command": "open",
+        "target": "https://dailydictation.com/",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Register",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "id=displayName",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=displayName",
+        "value": "testuser12a"
+    },
+    {
+        "command": "click",
+        "target": "id=email",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=email",
+        "value": "testuser12agmailcom"
+    },
+    {
+        "command": "click",
+        "target": "id=password",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=password",
+        "value": "nh12"
+    },
+    {
+        "command": "click",
+        "target": "id=submit",
+        "value": ""
+    },
+    {
+        "command": "verifyText",
+        "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::div[1]",
+        "value": "This value is not a valid email address.",
+        "ignoreFailure": true
+    }
+],
+"User_Auth_Register_05": [
+    {
+        "command": "open",
+        "target": "https://dailydictation.com/",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Register",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "id=displayName",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=displayName",
+        "value": "tstuser123abca"
+    },
+    {
+        "command": "click",
+        "target": "id=email",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=email",
+        "value": "tstuser12a3@gmail.com"
+    },
+    {
+        "command": "click",
+        "target": "id=password",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=password",
+        "value": "nh"
+    },
+    {
+        "command": "click",
+        "target": "id=submit",
+        "value": ""
+    },
+    {
+        "command": "verifyText",
+        "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::div[1]",
+        "value": "This value is too short. ",
+        "ignoreFailure": true
+    }
+],
+"User_Auth_Register_06": [
+    {
+        "command": "open",
+        "target": "https://dailydictation.com/",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "id=account-dropdown-toggle",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Logout",
+        "value": ""
+    },
+    {
+        "command": "open",
+        "target": "https://dailydictation.com/",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "link=Register",
+        "value": ""
+    },
+    {
+        "command": "click",
+        "target": "id=displayName",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=displayName",
+        "value": "utest123abc"
+    },
+    {
+        "command": "click",
+        "target": "id=email",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=email",
+        "value": "utest123abc@gmail.com"
+    },
+    {
+        "command": "click",
+        "target": "id=password",
+        "value": ""
+    },
+    {
+        "command": "type",
+        "target": "id=password",
+        "value": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijABCDEFGHIJ"
+    },
+    {
+        "command": "click",
+        "target": "id=submit",
+        "value": ""
+    },
+    {
+        "command": "verifyText",
+        "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::div[1]",
+        "value": "This value is too long. It should have 50 characters or less.",
+        "ignoreFailure": true
+    }
+],
+"LessonList_Englishexpressions_01": [
+  {
+    "command": "open",
+    "target": "https://dailydictation.com/",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "id=nav-dropdown-videos",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "link=English expressions",
+    "value": ""
+  },
+  {
+    "command": "storeXpathCount",
+    "target": "xpath=//div[contains(@class,'col-lg-4')]//table//tr/td/a",
+    "value": "lessonCount"
+  },
+  {
+    "command": "echo",
+    "target": "\"Tổng số bài học: ${lessonCount}\"",
+    "value": ""
+  }
+],
+"LessonList_Englishexpressions_02": [
+  {
+    "command": "open",
+    "target": "https://dailydictation.com/",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "id=nav-dropdown-videos",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "link=English expressions",
+    "value": ""
+  },
+  {
+    "command": "storeText",
+    "target": "link=exact:2. What do you do for a living?",
+    "value": "lessonTitle"
+  },
+  {
+    "command": "click",
+    "target": "link=exact:2. What do you do for a living?",
+    "value": ""
+  },
+  {
+    "command": "verifyText",
+    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='English Expressions'])[1]/following::h1[1]",
+    "value": "${lessonTitle}",
+    "ignoreFailure": true
+  }
+],
+"LessonList_Englishexpressions_03": [
+  {
+    "command": "open",
+    "target": "https://dailydictation.com/",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "id=nav-dropdown-videos",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "link=English expressions",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "link=2",
+    "value": ""
+  },
+  {
+    "command": "verifyText",
+    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('179. It doesn', \"'\", 't agree with me.')])[1]/following::span[1]",
+    "value": "Page 2 of 13",
+    "ignoreFailure": true
+  }
+],
+"LessonList_Englishexpressions_04": [
+  {
+    "command": "open",
+    "target": "https://dailydictation.com/",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "id=nav-dropdown-videos",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "link=English expressions",
+    "value": ""
+  },
+  {
+    "command": "click",
+    "target": "link=3",
+    "value": ""
+  },
+  {
+    "command": "sendKeys",
+    "target": "css=body",
+    "value": "${KEY_F5}"
+  },
+  {
+    "command": "verifyText",
+    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('299. It', \"'\", 'll never fly')])[1]/following::span[1]",
+    "value": "Page 3 of 13",
+    "ignoreFailure": true
+  }
+]
+}
