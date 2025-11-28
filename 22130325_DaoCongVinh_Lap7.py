@@ -1,6 +1,6 @@
 # CONFIG
 BASE_URL = "https://dailydictation.com"
-USERNAME = "221130325@st.hcmuaf.edu.vn"
+USERNAME = "congvinh@gmail.com"
 PASSWORD = "Vinh2004.."
 
 import unittest
@@ -231,7 +231,7 @@ class TestDailyDictation(unittest.TestCase):
         )
         email_field.clear()
         time.sleep(0.5)
-        email_field.send_keys("congvinh@gmail.com")
+        email_field.send_keys("congvinh1@gmail.com")
         time.sleep(0.5)
         self.driver.find_element(By.ID, "edit_email_submit").click()
         time.sleep(0.5)
@@ -311,3 +311,4 @@ class TestDailyDictation(unittest.TestCase):
 if __name__ == '__main__':
     # Chạy tests
     unittest.main(verbosity=2)
+
