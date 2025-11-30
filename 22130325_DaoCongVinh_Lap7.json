@@ -1,0 +1,1422 @@
+{
+  "testSuites": {
+    "ProfileManagement": [
+      {
+        "testId": "PMChangeUsernameSuccess01",
+        "testName": "Change Username - Success",
+        "description": "Successfully change display name to valid value",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/profile/562517\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/profile/562517"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//a[@id=\\'account-dropdown-toggle\\']/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Account information\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Display name\\'])[1]/following::a[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/edit-display-name\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/edit-display-name"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//*/text()[normalize-space(.)=\\'\\']/parent::*', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type Vinh4567",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_display_name_displayName"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "Vinh4567",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_display_name_submit"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"View profile\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          }
+        ]
+      },
+      {
+        "testId": "PMChangeUsernameEmpty",
+        "testName": "Change Username - Empty Value",
+        "description": "Attempt to change display name with empty value",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/profile/562517\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/profile/562517"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//a[@id=\\'account-dropdown-toggle\\']/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Account information\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Display name\\'])[1]/following::a[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/edit-display-name\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/edit-display-name"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//*/text()[normalize-space(.)=\\'\\']/parent::*', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type ",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_display_name_displayName"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_display_name_submit"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "waitForElementPresent",
+            "wait": {
+              "waitFor": "validation",
+              "timeoutInMilliseconds": 60000,
+              "validation": {
+                "target": {
+                  "locators": [
+                    {
+                      "type": "dom",
+                      "value": "document.evaluate('//div[contains(@class,\\'invalid-feedback\\') and contains(@class,\\'d-block\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                  ]
+                },
+                "type": "element_match",
+                "failIfFound": false,
+                "match": ""
+              }
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": ""
+          }
+        ]
+      },
+      {
+        "testId": "PMChangeUsernameSpecialChar03",
+        "testName": "Change Username - Special Characters",
+        "description": "Change display name with special characters",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/profile/562517\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/profile/562517"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//a[@id=\\'account-dropdown-toggle\\']/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Account information\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Display name\\'])[1]/following::a[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/edit-display-name\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/edit-display-name"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//*/text()[normalize-space(.)=\\'\\']/parent::*', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type Vinh%#!%",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_display_name_displayName"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "Vinh%#!%",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_display_name_submit"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"View profile\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          }
+        ]
+      },
+      {
+        "testId": "PMChangeEmailSuccess04",
+        "testName": "Change Email - Success",
+        "description": "Successfully change email address",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Edit\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/edit-email\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/edit-email"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//*/text()[normalize-space(.)=\\'\\']/parent::*', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type congvinh2@gmail.com",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_email_email"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "congvinh2@gmail.com",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_email_submit"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"View profile\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          }
+        ]
+      },
+      {
+        "testId": "PMChangeEmailFaild05",
+        "testName": "Change Email - Failed",
+        "description": "Failed attempt to change email address",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/user/edit-email\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/edit-email"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//a[@id=\\'account-dropdown-toggle\\']/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Account information\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Edit\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/edit-email\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/edit-email"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//*/text()[normalize-space(.)=\\'\\']/parent::*', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type congvinh2@gmail.com",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_email_email"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "congvinh2@gmail.com",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#edit_email_submit"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          }
+        ]
+      },
+      {
+        "testId": "PMChangePassowrdSuccess06",
+        "testName": "Change Password - Success",
+        "description": "Successfully change password",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//a[@id=\\'account-dropdown-toggle\\']/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Change password\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/change-password\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/change-password"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_currentPassword"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type Vinh2004..",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_currentPassword"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "Vinh2004..",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_newPassword"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type Vinh2004@@",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_newPassword"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "Vinh2004@@",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_submit"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          }
+        ]
+      },
+      {
+        "testId": "PMChangePassowrdWrongOld07",
+        "testName": "Change Password - Wrong Old Password",
+        "description": "Attempt to change password with wrong old password",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/user/profile\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/profile"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//a[@id=\\'account-dropdown-toggle\\']/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Change password\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "Loading of \"https://dailydictation.com/user/change-password\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/user/change-password"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_currentPassword"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type Vinh2004",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_currentPassword"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "Vinh2004",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_newPassword"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "type Vinh2004",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_newPassword"
+                }
+              ]
+            },
+            "type": "keystrokes",
+            "textValue": "Vinh2004",
+            "simulateBlurEvent": true,
+            "masked": false
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#change_password_submit"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          }
+        ]
+      }
+    ],
+    "ProgressManagement": [
+      {
+        "testId": "PMViewProgressSummary01",
+        "testName": "View Progress - Summary",
+        "description": "View progress summary with lesson completions, active days, and active time",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": ".d-md-inline"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Public profile\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 800);"
+          },
+          {
+            "description": "assertText",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "const elem = document.evaluate('//span[normalize-space()=\\'Lesson completions:\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Lesson completions:\";\n                        if(matches && false) {\n                            api.fail(\"Text Lesson completions: was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Lesson completions: was not present.\");\n                        }"
+          },
+          {
+            "description": "assertText",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "const elem = document.evaluate('//span[normalize-space()=\\'Active days:\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Active days:\";\n                        if(matches && false) {\n                            api.fail(\"Text Active days: was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Active days: was not present.\");\n                        }"
+          },
+          {
+            "description": "assertText",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "const elem = document.evaluate('//span[normalize-space()=\\'Active time:\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Active time:\";\n                        if(matches && false) {\n                            api.fail(\"Text Active time: was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Active time: was not present.\");\n                        }"
+          }
+        ]
+      },
+      {
+        "testId": "PMViewProgressActivity02",
+        "testName": "View Progress - Activity",
+        "description": "View progress activity and verify test completion",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": ".d-md-inline"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Public profile\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 800);"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Last 30 days:\\'])[1]/following::button[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0,
+            "validate": [
+              {
+                "type": "element_match",
+                "failIfFound": false,
+                "isRegex": false,
+                "target": {
+                  "locators": [
+                    {
+                      "type": "dom",
+                      "value": "document.evaluate('//a[contains(@href,\\'test-01-part-a-extract-1\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                  ]
+                },
+                "match": "Test 01 - Part A - Extract 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "testId": "PMViewProgressStar03",
+        "testName": "View Progress - Star Items",
+        "description": "View starred progress items",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/profile/562517\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/profile/562517"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "#account-dropdown-toggle"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Public profile\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Last 30 days:\\'])[1]/following::button[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0,
+            "validate": [
+              {
+                "type": "element_match",
+                "failIfFound": false,
+                "isRegex": false,
+                "target": {
+                  "locators": [
+                    {
+                      "type": "dom",
+                      "value": "document.evaluate('//a[contains(@href,\\'1-at-home\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                  ]
+                },
+                "match": "1. At home (1)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "testId": "PMViewProgressStar04",
+        "testName": "View Progress - Star Items Alternate",
+        "description": "View starred progress items with test validation",
+        "configuration": {
+          "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+          }
+        },
+        "type": "clickpath",
+        "version": "1.0",
+        "events": [
+          {
+            "description": "Loading of \"https://dailydictation.com/profile/562517\"",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://dailydictation.com/profile/562517"
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('//a[@id=\\'account-dropdown-toggle\\']/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "css",
+                  "value": "a:contains(\"Public profile\")"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0
+          },
+          {
+            "description": "click",
+            "wait": {
+              "waitFor": "page_complete"
+            },
+            "target": {
+              "locators": [
+                {
+                  "type": "dom",
+                  "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Last 30 days:\\'])[1]/following::button[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }
+              ]
+            },
+            "type": "click",
+            "button": 0,
+            "validate": [
+              {
+                "type": "element_match",
+                "failIfFound": false,
+                "isRegex": false,
+                "target": {
+                  "locators": [
+                    {
+                      "type": "dom",
+                      "value": "document.evaluate('//a[contains(@href,\\'test-01-part-a-extract-1\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                  ]
+                },
+                "match": "Test 01 - Part A - Extract 1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
